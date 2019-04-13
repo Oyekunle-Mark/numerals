@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 const Button = ({ value, change }) =>
-  <button onClick={() => {
+  <button className="button" onClick={() => {
     change()
   }} >
     {value}

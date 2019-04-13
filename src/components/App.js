@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import Button from './Button';
 import InputForm from './InputForm'
@@ -49,13 +49,30 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <InputForm interval={this.state.interval} changeIncrement={this.changeIncrement} />
-        <Button value={'+'} change={this.countIncrement} />
-        <Button value={'-'} change={this.countDecrement} />
-        <Button value={'C'} change={this.countReset} />
-        <Display count={this.state.count} />
-      </div>
+      <Fragment>
+        <header className="header">
+          <h1>Count Away</h1>
+        </header>
+
+        <div className="components">
+          <InputForm interval={this.state.interval} changeIncrement={this.changeIncrement} />
+          <small>Change counter interval</small>
+
+          <Button value={'+'} change={this.countIncrement} />
+
+          <Display count={this.state.count} />
+
+          <Button value={'-'} change={this.countDecrement} />
+
+          <br />
+
+          <Button value={'C'} change={this.countReset} />
+        </div>
+
+        <footer className="footer">
+          <h3>&copy; Oyekunle Oloyede</h3>
+        </footer>
+      </Fragment>
     )
   }
 }

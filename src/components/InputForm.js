@@ -7,8 +7,8 @@ const InputForm = ({ interval, changeIncrement }) => {
   }
 
   return (
-    <form>
-      <input type='number' value={interval} onChange={clickHandler} />
+    <form className="form">
+      <input type='number' value={interval} onChange={clickHandler} autoFocus />
     </form>
   )
 }
