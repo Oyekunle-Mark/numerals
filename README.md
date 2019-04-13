@@ -20,4 +20,4 @@ Build the app with:
 ```npm run build```
 
 #### Author
-*Oyekunle Oloyed*
+*Oyekunle Oloyede*
