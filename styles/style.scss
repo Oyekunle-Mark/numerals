@@ -1,0 +1,94 @@
+$labelColor: rgb(11, 11, 26);
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  
+  #root {
+    height: 100%;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .header {
+      background: $labelColor;
+      padding: 10px;
+      h1 {
+        color: white;
+        font: {
+          weight: bold;
+        }
+      }
+    }
+
+    .components {
+      text-align: center;
+      margin-top: auto;
+
+      .form input {
+        width: 200px;
+        height: 50px;
+        border: 2px solid #000;
+        border-radius: 15px;
+        text-align: center;
+        font: {
+          size: 40px;
+          weight: bold;
+        }
+      }
+
+      small {
+          display: block;
+          margin-top: 5px;
+          margin-bottom: 20px;
+          color: #F00;
+      }
+
+      .button {
+        background: #000;
+        color: #fff;
+        margin: 20px;
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font: {
+          weight: bold;
+          size: 30px;
+        }
+      }
+
+      .display {
+        display: inline-block;
+        background: white;
+        height: 50px;
+        width: 400px;
+        border: 2px solid #000;
+        margin: 5px;
+        padding: 10px;
+        text-align: right;
+        border-radius: 15px;
+        font: {
+          size: 40px;
+          weight: bold;
+        }
+      }
+    }
+
+    .footer {
+      margin-top: auto;
+      background: $labelColor;
+      text-align: center;
+      padding: 5px;
+      margin-top: auto;
+      h3 {
+        color: white;
+      }
+    }
+  }
+}
