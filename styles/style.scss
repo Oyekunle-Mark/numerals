@@ -7,7 +7,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  
+
   #root {
     height: 100%;
     font-family: monospace;
@@ -43,10 +43,10 @@ body {
       }
 
       small {
-          display: block;
-          margin-top: 5px;
-          margin-bottom: 20px;
-          color: #F00;
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        color: #f00;
       }
 
       .button {
@@ -60,6 +60,12 @@ body {
         font: {
           weight: bold;
           size: 30px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        &:active {
+          background: #c00;
         }
       }
 
